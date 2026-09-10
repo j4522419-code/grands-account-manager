@@ -1,4 +1,4 @@
-Validation for version 3 6
+Validation for version 3 7
 
 Release build and automated tests cover encrypted storage and tamper detection
 Bulk imports preserve password text and skip duplicates
@@ -42,3 +42,18 @@ A complete previous build was downloaded from Roblox servers
 Build 0 737 0 7371584 was assembled with the player and content packages
 The player was not launched
 The download test output is in release download probe results
+
+Copy tests cover single and multiple usernames passwords cookies and combos
+Credentials keep their original punctuation and spaces
+Right clicking a selected row keeps the multi selection
+Right clicking an unselected row selects that row
+
+PIN transfer tests cover leading zero PINs and invalid PIN formats
+The correct PIN recovers full account records
+Wrong PINs and modified encrypted fields are rejected
+Exports contain no plaintext credentials
+Each export uses fresh encryption values
+Duplicate imports preserve existing accounts
+Failed local saves roll back imported accounts
+
+Tests use fictional credentials and do not read or modify the real clipboard
