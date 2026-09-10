@@ -1,4 +1,4 @@
-Validation for version 3 4
+Validation for version 3 4 1
 
 Release build and automated tests cover encrypted storage and tamper detection
 Bulk imports preserve password text and skip duplicates
@@ -22,3 +22,7 @@ Real Roblox joining and rejoining were not tested
 The close all Roblox command was not run against real players
 
 Raw test output is in the release folder
+
+Display name checks also cover delayed saves and successful replies without a saved change
+An expired session during confirmation never causes another change request
+

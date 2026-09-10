@@ -2,6 +2,8 @@ Grands Account Launcher
 
 A simple black and white Roblox launcher for Windows
 
+extract -win-x64.zip then run the .exe to use
+
 Open GrandsAccountLauncher.exe
 No app password is needed
 Accounts are saved encrypted for your Windows user
@@ -15,7 +17,9 @@ Select accounts then choose Display names to give them the same display name
 Roblox decides whether the name can be used
 If Roblox says to wait the remaining queue stops
 You can retry later
-The app checks the current name before sending another change
+The app changes your actual Roblox display name
+It reads the name back from Roblox before showing success
+If Roblox does not confirm the change the app tells you to check settings
 
 Join game opens a player for each selected account
 Rejoin game uses each account last launched game
@@ -61,3 +65,4 @@ Roblox display name API
 https://create.roblox.com/docs/cloud/reference/domains/users
 
 The original MIT license and dependency notices are included
+
