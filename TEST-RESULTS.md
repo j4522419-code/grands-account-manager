@@ -1,4 +1,4 @@
-Validation for version 3 5
+Validation for version 3 6
 
 Release build and automated tests cover encrypted storage and tamper detection
 Bulk imports preserve password text and skip duplicates
@@ -31,3 +31,14 @@ Version selection checks cover installed version ordering and duplicate paths
 A selected older version is used and a missing version never falls back silently
 The global version choice survives encrypted saves
 
+
+Previous version download checks cover history parsing and package paths
+They verify package checksums and content folders
+Missing packages and cancelled downloads never become installed
+Partial folders are removed and completed downloads are kept
+Archive paths are constrained to the chosen version folder
+
+A complete previous build was downloaded from Roblox servers
+Build 0 737 0 7371584 was assembled with the player and content packages
+The player was not launched
+The download test output is in release download probe results
